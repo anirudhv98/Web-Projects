@@ -1,0 +1,144 @@
+body {
+	margin:0;
+	
+}
+
+.grand_parent {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(cr711.jpg);
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	/*margin-left: 100px;*/
+}
+
+.parent {
+	margin-left: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	text-align: center;
+	padding: 3% 3%;
+	flex-flow: column;
+	background-color: rgba(230,230,230,0.9);
+}
+
+
+
+#sign_in {
+	font-family: "Roboto Slab";
+	float: none;
+}
+
+#sign_in h2 {
+	margin-bottom: 40px;
+}
+
+#sign_in .textb {
+	padding: 10px;
+	float: right;
+	margin: 4px;
+}
+
+#sign_in label {
+	text-align: center;
+	font-size: 20px;
+	float: left;
+}
+
+.button {
+	color: white;
+	background-color: black;
+	border: 0;
+	padding: 23px 30px;
+	float: none;
+	text-align: center;
+	font-family: "Roboto Slab";
+	margin-top: 40px;
+	font-size: 15px;
+}
+
+/*#sign_in #button2 {
+	color: white;
+	background-color: black;
+	border: 0;
+	padding: 23px 30px;
+	float: right;
+	text-align: center;
+	font-family: "Roboto Slab";
+	margin-top: 40px;
+	font-size: 15px;
+}
+*/
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.details div {
+	display: inline;
+	text-align: center;
+}
+
+.details div .textb {
+	float: right;
+}
+
+.grand_parent .parent p {
+	color: red;
+	margin: 0;
+	margin-top: 25px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1100px) 
+{
+
+.grand_parent {
+	justify-content: flex-start;
+
+}
+
+.parent {
+	padding: 1% 1%;
+	margin-top: 50px;
+}
+
+#sign_in label {
+    font-size: 15px;
+}
+
+#sign_in .textb {
+	padding: 5px;
+	margin: 2px;
+}
+
+.button {
+	padding: 12px 15px;
+	float: none;
+	text-align: center;
+	font-family: "Roboto Slab";
+	margin-top: 25px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 630px) {
+
+.grand_parent {
+	background-image: none;
+	justify-content: center;
+}
+
+.parent {
+	margin: 0;
+}
+}

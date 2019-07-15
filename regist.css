@@ -1,0 +1,38 @@
+.parent {
+	padding: 2.5% 2.5%;
+	margin-top: 70px;
+}
+
+#reg {
+	margin-top: 20px;
+}
+
+#sign_in h2 {
+	margin-top: 0px !important;
+	margin-bottom: 30px;
+}
+.details input {
+	margin: 0px !important; 
+}
+
+.details input[type='date'] {
+	float:left !important; 
+	margin-left: 5px !important;
+}
+
+form p {
+	/*float: left;*/
+	color: red;
+	margin: 5px;
+	font-size: 0.7em;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1100px) 
+{
+
+.parent {
+	padding: 25px 25px;
+}
+}

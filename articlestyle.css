@@ -1,0 +1,124 @@
+body {
+	background-color: white;
+}
+
+.main2 {
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 11.5vh;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main2 h2 {
+	float: left;
+	/*text-decoration: underline;*/
+	align-self: flex-start;
+	border-bottom: 1px solid rgb(200,200,200);
+	padding-bottom: 1%;
+	width: 60%;
+	margin-left: 20%;
+	font-family: "Roboto";
+}
+.main2 div {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	background-color: white;
+	border: 1px solid rgb(200,200,200);
+	/*padding: 15px 10px;*/
+	margin:0;
+	margin-top: 20px;
+	font-family: "Roboto Slab";
+	color: rgb(130,130,130);
+	transition: box-shadow 0.5s;
+	height: 58%;
+	width: 60%;
+}
+
+.main2 div div {
+	width: 30%;
+}
+.main2 div p {
+	display: inline;
+	float: left;
+	width: 100%;
+	margin-top: 0;
+	word-wrap: break-word;
+	/*overflow-wrap: break-word;*/
+}
+
+.main2 div h4 {
+	color: rgb(60,60,60);
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.main2 div h5 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	/*text-overflow:*/ 
+}
+.main2 div a {
+	width: 65%;
+}
+.main2 div img {
+	height: 100%;
+	width: 100%;
+	float: right;
+}
+
+.main2 div:hover {
+	-webkit-box-shadow: 0 0 10px rgb(150,150,150);
+    box-shadow: 0 0 10px rgb(150,150,150);
+}
+
+.main2 div div {
+	display: block;
+	border: none;
+	margin-left: 20px;
+}
+
+.main2 div div:hover {
+	box-shadow: none;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 790px) {
+
+.main2 {
+	margin-top: 1vh;
+}
+.main2 div {
+	flex-flow: column-reverse;
+	justify-content: flex-start;
+
+}
+.main2 div a {
+	width: 100%;
+}
+.main2 div img {
+	width: 100%;
+	float: none;
+}
+
+.main2 div div {
+	width: 80%;
+	float: none;
+}
+
+.main2 div div h4, h5, p {
+	/*width: 80% !important;*/
+	font-size: 1.2em;
+	margin-top: 0 !important;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+.main2 div div h4,h5,p {
+	width: 100%;
+	font-size: 0.75em;
+}
+}

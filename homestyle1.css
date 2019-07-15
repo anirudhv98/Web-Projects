@@ -1,0 +1,451 @@
+body {
+	margin:0;
+	padding: 0;
+	background-color: rgb(230,230,230);
+	font-family: "Roboto Slab";
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo {
+	font-family:Anton;
+	font-style: italic; 
+	color:white;
+	font-size: 3em;
+	float: left;
+	margin-top: auto;
+	margin-bottom: 0;
+
+}
+
+span:hover {
+	color: grey;
+}
+
+#hdiv {
+	margin: 0;
+	height: 11.5vh;
+	color:white;
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	top: 0;
+	position: fixed;
+}
+
+#hdiv nav{
+	float:right;
+	display: inline-block;
+
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+}
+
+header nav ul li {
+	float: left;
+	margin: -5px 10px;
+	text-align: center;
+	font-family: "Roboto Slab";
+	text-transform: uppercase;
+	padding: 32px 20px;
+	/*width: 16.67%;*/
+}
+#si {
+	margin-right: 0px;
+}
+
+#hdiv nav ul li ul {
+	display: flex;
+	flex-flow: column wrap;
+	visibility: hidden;
+	padding: 0;
+	margin-left: -20px;
+	margin-top: 30px;
+	position: absolute;
+	clear: left;
+	background-color: rgba(0,0,0,0.86);
+	transition: .2s ;
+	transform: translateY(20px);
+	z-index: 9999;
+}
+
+#hdiv nav ul li ul li {
+	margin:0;
+	padding-left: 0; 
+	display: block;
+	padding: 33px 21px;
+	color: white;
+	border-bottom: 1px solid rgba(250,10,0,0.9);
+	z-index: 9999;
+}
+
+#hdiv nav ul li ul li:hover {
+	color:black;
+}
+
+header div nav ul li:hover {
+	background-color: rgba(255,255,255,0.9);
+	color:black;
+}
+
+header #hdiv nav ul li:hover ul {
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+.main {
+	display: flex;
+	float: left;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+.main #content {
+	width: 50%;
+	/*background-color: rgba(255,20,20,0.5);*/
+}
+.main .sidebar {
+	display: flex;
+	flex-flow: column wrap;
+	width: 25%;
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main .sidebar div img {
+	height: 10%;
+	width: 10%;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main .sidebar #lefti {
+	display: inline;
+	width: 20%;
+	float: left;
+	margin-top: 6px;
+	height: 40px;
+	background: url("Icons/left1.png") no-repeat 98% center;
+	background-size: 30px;
+	cursor: pointer; 
+}
+
+.main .sidebar #righti {
+	display: inline;
+	width: 10%;
+	float: right;
+	margin-top: 6px;
+	height: 40px;
+	background: url("Icons/right1.png") no-repeat 98% center;
+	background-size: 30px;
+	cursor: pointer;
+}
+.main .sidebar table {
+	padding: 2px 2px;
+	/*white-space: nowrap;*/
+	align-content: center;
+	text-align: center;
+	/*width: 10%;*/
+}
+
+.main .sidebar table tr {
+	text-align: center;
+}
+
+.main .sidebar table .head {
+	background-color: rgba(0,0,0,0.9);
+	color: rgba(240,240,240,0.9);
+	/*padding: 5px 5px; */
+}
+
+.main .sidebar table td,th{
+	border-bottom: 1px solid #e8e8e8;
+	font-size: 0.85em;
+	/*box-sizing: border-box;*/
+	padding: 1% 2%; 
+	vertical-align: baseline;
+	text-align: center;
+}
+
+.main .sidebar table td p {
+	margin:auto;
+	/*margin-top: 20%;*/
+	display: inline;	
+}
+
+.main .sidebar table td img{
+	float: left;
+	height: auto;
+    width: 10%;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main .sidebar table tr {
+	background-color: rgb(235,235,235);
+}
+
+.main .sidebar table .top1 {
+	background-color: rgb(160, 160, 160);
+}
+
+.main .sidebar table .top4 {
+	background-color: rgb(210, 210, 210);
+}
+
+.main .sidebar table .top6 {
+	background-color: rgb(225, 225, 225);
+}
+
+.main .sidebar table .bot3 {
+	background-color: rgb(229, 119, 119);
+}
+
+/*.main .sidebar table .standimg {
+	max-width: 10%;
+	margin: auto;
+	margin-top: 10px;
+}*/
+.main .sidebar h2 {
+	text-align: center;
+	background-color: black;
+	margin-top: 0;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: white;
+	margin-bottom: 0;
+}
+.main .sidebar>div {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	background-color: rgb(230,230,230);
+	border-radius: 5px;
+	padding: 10px 10px;
+	margin: 5px;
+}
+
+.main .sidebar div div {
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 5px;
+	color: white;
+	padding: 0px 15px; 
+}
+
+@keyframes slider {
+
+0% {
+	left:0;
+}
+15% {
+	left:0;
+}
+25% {
+	left:-100%;
+}
+40% {
+	left: -100%;
+}
+50% {
+	left: -200%;
+}
+65% {
+	left: -200%;
+}
+75% {
+	left: -300%;
+}
+90% {
+	left: -300%;
+}
+100% {
+	left: -400%;
+}
+
+}
+
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure img {
+	width: 25%;
+	float: left;
+	height: 88.24vh;
+}
+
+#slider figure {
+	position: relative;
+	width: 400%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 2em;
+	animation: 16s slider infinite;
+	height: 50%;
+	z-index: -5;
+	margin-top: 11.5vh;
+}
+/* Media Queries */
+
+/*Tablets */
+
+@media screen and (max-width: 1100px)
+{
+
+#hdiv {
+	height:160px;
+	position: relative;
+}
+
+#hdiv nav {
+	float:none;
+	left: 0;
+	/*clear:left;*/
+	width: 100%;
+}
+
+.logo {
+	margin-bottom: 0px;
+	float:none;
+	text-align: center;
+}
+
+#hdiv nav ul li {
+	margin: 2px 0;
+	width: 16.667%;
+	padding: 33px 0px;
+}
+
+#hdiv nav ul li ul {
+	margin-left: 0;
+	margin-top: 31px;
+}
+
+#hdiv nav ul li ul li {
+	width: 80px;
+	text-align: center;
+	border-bottom: none;
+	border-right: 1px solid rgba(250,10,0,0.9);
+}
+
+header #hdiv nav ul li:hover ul {
+	display: flex;
+	flex-flow: row wrap;
+
+}
+#slider figure{
+	margin-top: 0;
+}
+#slider figure img {
+	width: 25%;
+	float: left;
+	height: 76.5vh;
+}
+
+}
+
+@media screen and (max-width: 790px ) and (min-width: 740px) {
+
+.main .sidebar table {
+	padding: 0px 0px;
+	width: 100%;
+	/*overflow: hidden;*/
+	/*margin:0;*/
+}
+
+.main .sidebar table td {
+	padding: 0px 0px;
+	/*overflow: hidden;*/
+	/*margin:0;*/
+}
+}
+
+/*Mobiles*/
+
+@media screen and (max-width: 630px)
+{
+.logo {
+	float:left;
+	font-size: 2.25em;
+}
+
+#hdiv {
+	height: 55px;
+}
+
+.burger_nav {
+	display: inline-block;
+	width: 20%;
+	float: right;
+	margin-top: 6px;
+	height: 40px;
+	background: url(hmenu.png) no-repeat 98% center;
+	background-size: 30px;
+	cursor: pointer;
+}
+
+header nav ul {
+	overflow: hidden;
+	height:0;
+	position: relative;
+	z-index: 11;
+}
+
+#hdiv nav ul li {
+	float: none;
+	width: 100%;
+	background-color: rgba(0,0,0,0.9);
+	margin:0;
+	padding: 20px 0px;
+	border-bottom: 0.5px solid rgba(250,10,0,0.9);
+}
+
+header nav ul.open {
+	height:auto;
+}
+
+header nav ul li ul.open {
+	height:auto;
+}
+header div nav ul li:hover {
+	background-color: rgba(255,255,255,0.9);
+	color:rgba(230,230,230,0.9);
+}
+
+
+.main #content {
+	width: 100%;
+	/*background-color: rgba(255,20,20,0.5);*/
+}
+.main .sidebar {
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+}
+
+@media screen and (max-width: 480px) 
+{
+#hdiv {
+	height: 50px;
+}
+
+.logo {
+	font-size: 2em;
+}
+
+.burger_nav {
+	margin-top: 3px;
+}
+}
